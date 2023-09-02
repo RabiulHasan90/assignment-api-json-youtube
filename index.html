@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body> 
+<header>
+   <nav class="flex justify-between px-10 mt-2">
+      <img class="h-auto w-auto max-lg:bg-red-200 max-sm:bg-slate-500" src="Logo.png" alt="">
+      <button class="btn max-lg:bg-green-900 max-lg:text-white max-sm:bg-pink-600" onclick="handleSort()">sort by view</button>
+     <button class="btn bg-red-500"><a href="blog.html">Blog</a></button>
+   </nav>
+   <hr class="px-5 mt-5 font-bold">
+<div class="tabs mt-2 border-none gap-2 bg-none flex items-center m-auto text-center justify-center px-10" id="tab-container">
+  
+</div>
+</header>
+<main>
+ 
+   <div  id="screen" class="grid grid-cols-4 mt-5  max-sm:grid-cols-2 px-10 mx-auto max-lg:grid-cols-3 gap-3">
+            <div class="video-preview">
+               <div class="thumbnail-row">
+                  <img class="thumbnail w-[300px] h-[200px]" src="thumbnail-1.webp">
+               </div>
+               <div>
+                  <div class="channel-picture  w-[50px] inline-block align-top ">
+                     <img class="profile-picture w-[40px] h-[40px] rounded-full" src="channel-2.jpeg">
+                  </div>
+                  <div class="video-info inline-block w-[200px]  ">
+                     <p class="video-title font-bold">
+                        Try Not To Laugh Challenge 
+                     </p>
+                     <p class="video-author flex align-bottom ">
+                        Markiplier <span class="justify-center"><img src="act.svg" alt=""></span>
+                     </p>
+                     <p class="video-stats">
+                      91k views
+                     </p>
+                  </div>
+               </div>
+            </div>
+  
+   </div>
+ 
+</main>
+<div id="no-data">
+
+</div>
+
+  
+   <script src="script.js"></script>
+</body>
+</html>
